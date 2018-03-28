@@ -34,15 +34,41 @@ namespace Lab07
                 }
             }
             count--; //Dccriment our length
-            if (items.Length > count) //If our Actual length is more than our precived length shrink the array
+            if (items.Length > count * 2) //If our Actual length is more than double our precived length shrink the array
             {
-                T[] temp = new T[count];
+                T[] temp = new T[count + 10];
                 for (int i = 0; i <= count; i++)
                 {
                     temp[i] = items[i];
                 }
                 items = temp; //temp becomes items
             }
+        }
+
+        public void Shuffle()
+        {
+            Random rand = new Random();
+            T[] temp = new T[count];
+            int tempCount = count;
+            for (int i = 0; i <= count; i++)
+            {
+                int targetIndex = rand.Next(0, tempCount); //Find index between 0 and collection length
+                temp[i] = items[targetIndex]; //Add that to the new array
+                //Pull that index from the list so we don't get it again
+                for (int k = 0; k < items.Length; k++)
+                {
+                    if (i < targetIndex) //Up to the target index is copied
+                    {
+                        items[k] = items[k];
+                    }
+                    else //The rest of the array is shifted over one
+                    {
+                        items[k] = items[k + 1];
+                    }
+                }
+                tempCount--;
+            }
+            items = temp; //Items gets the shuffled array
         }
 
         public IEnumerator<T> GetEnumerator()
