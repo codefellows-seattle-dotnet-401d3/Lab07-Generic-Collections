@@ -1,4 +1,4 @@
-# unit test ATM
+# Generic Collections
 
 A small app intended to explore collections by implimenting our own collection
 

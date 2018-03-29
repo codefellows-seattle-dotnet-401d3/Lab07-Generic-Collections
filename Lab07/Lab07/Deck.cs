@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lab07
 {
-    class Deck<T> : IEnumerable<T>
+    public class Deck<T> : IEnumerable<T>
     {
         T[] items = new T[10];
         int count = 0; //Total items in the array.Used for length
