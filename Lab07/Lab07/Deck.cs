@@ -55,7 +55,7 @@ namespace Lab07
                 int targetIndex = rand.Next(0, tempCount); //Find index between 0 and collection length
                 temp[i] = items[targetIndex]; //Add that to the new array
                 //Pull that index from the list so we don't get it again
-                for (int k = 0; k < items.Length; k++)
+                for (int k = 0; k < tempCount-1; k++)
                 {
                     if (i < targetIndex) //Up to the target index is copied
                     {

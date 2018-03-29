@@ -10,6 +10,9 @@ namespace Lab07
             BuildPLayingCardDeck(cards);
             PrintDeck(cards);
             Console.ReadLine();
+            cards.Shuffle();
+            PrintDeck(cards);
+            Console.ReadLine();
         }
 
         public static void BUildSuite(Deck<Card> deck, Card.Suits suit)
