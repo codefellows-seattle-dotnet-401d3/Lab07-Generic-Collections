@@ -64,7 +64,7 @@ This is ***your*** job. It's up to the module creator to prove that their work i
 	4       | Program runs/compiles, but throws exceptions during execution |
 	2       | Missing tests // tests are not passing // not enough valid tests |
 	2       | Missing Readme Document // Readme Document does not meet standards |
-	0       | Program does not compile/run. Build Errors. |
+	0       | Program does not compile/run. Build Errors. // Required naming conventions not met |
 	0       | No Submission |
 
 - 3pts: Code meets industry standards
