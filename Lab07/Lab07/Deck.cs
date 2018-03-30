@@ -24,11 +24,7 @@ namespace Lab07
             int targetIndex = Array.IndexOf(items, targetItem); //find the index of the item.
             for (int i = 0; i < items.Length; i++)
             {
-                if (i < targetIndex) //Up to the target index is copied
-                {
-                    items[i] = items[i];
-                }
-                else //The rest of the array is shifted over one
+                if (i >= targetIndex) //shift the array at the target index
                 {
                     items[i] = items[i + 1];
                 }
@@ -50,19 +46,15 @@ namespace Lab07
             Random rand = new Random();
             T[] temp = new T[count];
             int tempCount = count;
-            for (int i = 0; i <= count; i++)
+            for (int i = 0; i < count; i++)
             {
                 int targetIndex = rand.Next(0, tempCount); //Find index between 0 and collection length
                 temp[i] = items[targetIndex]; //Add that to the new array
                 //Pull that index from the list so we don't get it again
-                for (int k = 0; k < items.Length; k++)
+                for (int k = 0; k < tempCount - 1; k++)
                 {
-                    if (i < targetIndex) //Up to the target index is copied
-                    {
-                        items[k] = items[k];
-                    }
-                    else //The rest of the array is shifted over one
-                    {
+                    if (k >= targetIndex) //Up to the target index is copied
+                    { 
                         items[k] = items[k + 1];
                     }
                 }
