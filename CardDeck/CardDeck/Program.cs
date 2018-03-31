@@ -62,7 +62,7 @@ namespace CardDeck
             }
         }
 
-        // Deck is a list adding a new list with the attached properties of V and s
+        // Deck is a list/Dictonary adding a new list with the attached properties of V and s
         public static Deck<Card> BuildNewDeck()
         {
             Deck<Card> DeckofCards = new Deck<Card> {
@@ -100,22 +100,22 @@ namespace CardDeck
         public static void Deal()
         {
             Deck<Card> deal = BuildNewDeck();
-            Console.WriteLine("New Deck!!!");
+            Console.WriteLine("Here is ths Deck");
             DisplayDeck(deal);
             Console.ReadLine();
             Console.WriteLine();
             deal.Shuffle();
-            Console.WriteLine("Shuffled Deck!!!");
+            Console.WriteLine("Here is a Deck with Random");
             DisplayDeck(deal);
             Console.ReadLine();
             Console.WriteLine();
             deal.Remove();
-            Console.WriteLine("Removed a card!!!");
+            Console.WriteLine("Removed only ");
             DisplayDeck(deal);
             Console.ReadLine();
             Console.WriteLine();
-            deal.Add(new Card(V.Two, s.Clubs));
-            Console.WriteLine("Added the 2 of Clubs");
+            deal.Add(new Card(V.Three, s.Dimond));
+            Console.WriteLine("Add two cards");
             DisplayDeck(deal);
         }
     }

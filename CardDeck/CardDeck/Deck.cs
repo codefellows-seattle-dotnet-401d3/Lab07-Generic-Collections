@@ -9,7 +9,7 @@ namespace CardDeck
 {
     public class Deck<T> : IEnumerable<T>
     {
-        T[] cards = new T[10];
+        T[] cards = new T[2];
         int count = 0;
 
        // add method to create a card <T>
