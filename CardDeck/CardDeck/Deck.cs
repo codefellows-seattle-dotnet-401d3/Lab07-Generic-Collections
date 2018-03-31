@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
+
+//Systems.collections.Generic imports libary
 namespace CardDeck
 {
     public class Deck<T> : IEnumerable<T>
@@ -10,6 +12,7 @@ namespace CardDeck
         T[] cards = new T[10];
         int count = 0;
 
+       // add method to create a card <T>
         public void Add(T newCard)
         {
             if (count == cards.Length)
@@ -20,11 +23,13 @@ namespace CardDeck
             cards[count++] = newCard;
         }
 
+        // returng the lenght of the array
         public int Length()
         {
             return count;
         }
 
+        // Method to remove the card
         public T Remove()
         {
             Array.Resize(ref cards, cards.Length - 1);
@@ -32,6 +37,7 @@ namespace CardDeck
             return deck;
         }
 
+        // Method to shuffle the card
         public void Shuffle()
         {
             for (int i = 0; i < count; i++)
@@ -44,7 +50,7 @@ namespace CardDeck
             }
         }
 
-      
+      //method to get a recieve the cards
         public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < count; i++)

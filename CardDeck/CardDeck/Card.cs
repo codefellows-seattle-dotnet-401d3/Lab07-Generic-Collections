@@ -11,6 +11,7 @@ namespace CardDeck
         for wiring, the acutal work is done by a method. */
         public Card(V value, s suit)
         {
+            // v are the variations, s is type of card
             Value = value;
             Suit = suit;
         }

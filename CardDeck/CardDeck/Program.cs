@@ -62,13 +62,10 @@ namespace CardDeck
             }
         }
 
-        /// <summary>
-        /// instantiates a new deck
-        /// </summary>
-        /// <returns>the built deck</returns>
+        // Deck is a list adding a new list with the attached properties of V and s
         public static Deck<Card> BuildNewDeck()
         {
-            Deck<Card> badHand = new Deck<Card> {
+            Deck<Card> DeckofCards = new Deck<Card> {
                 new Card(V.Four, s.Spades),
                 new Card(V.Five, s.Spades),
                 new Card(V.Eight, s.Hearts),
@@ -89,15 +86,11 @@ namespace CardDeck
                 new Card(V.Queen, s.Dimond),
             };
 
-            return badHand;
+            return DeckofCards;
 
         }
 
-        /// <summary>
-        /// uses the Remove() method from the Deck class to remove a card
-        /// </summary>
-        /// <param name="deck">the Deck object to remove from</param>
-        /// <returns>the updated Deck object</returns>
+        // calls the remove method on the Generics list of Deck <card>
         public static Deck<Card> RemoveFromDeck(Deck<Card> deck)
         {
             deck.Remove();
