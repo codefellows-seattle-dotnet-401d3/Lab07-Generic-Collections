@@ -4,30 +4,58 @@ using System.Text;
 
 namespace CardDeck
 {
-    class Deck
+    public class Deck<T> : IEnumerable<T>
     {
+        T[] cards = new T[10];
+        int count = 0;
 
-        static void Main(string[] args)
+        public void Add(T newCard)
         {
-            Console.WriteLine("Hello World!");
-            //EnumExample();
-            DeckExample();
+            if (count == cards.Length)
+            {
+                Array.Resize(ref cards, cards.Length * 2);
+            }
 
-       
+            cards[count++] = newCard;
         }
 
-
-        static void DeckExample()
+        public int Length()
         {
-            List<string> myList = new List<string>();
-            myList.Add("Ace of Hearts");
-            myList.Add("Two of Hearts");
-            myList.Add("Three of Hearts");
-            myList.Add("Four of Hearts");
-            myList.Add("Five of Hearts");
-            myList.Add("Six of Hearts");
+            return count;
+        }
 
+        public T Remove()
+        {
+            Array.Resize(ref cards, cards.Length - 1);
+            T deck = cards[--count];
+            return deck;
+        }
 
+        public void Shuffle()
+        {
+            for (int i = 0; i < count; i++)
+            {
+                Random rand = new Random();
+                int randNum = rand.Next(0, count);
+                T temp = cards[i];
+                cards[i] = cards[randNum];
+                cards[randNum] = temp;
+            }
+        }
+
+      
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < count; i++)
+            {
+                yield return cards[i];
+            }
+        }
+
+       
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
 
     }

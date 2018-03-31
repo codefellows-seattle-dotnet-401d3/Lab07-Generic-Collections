@@ -6,14 +6,7 @@ namespace CardDeck
     {
         static void Main(string[] args)
         {
-
-            //Look at you tube videos from 3/27/18 end of parts 1 0f 3
-
-            Console.WriteLine("Hello World!");
-
-            enumExample();
-            Console.ReadLine();
-
+            
 
         }
 
