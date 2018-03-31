@@ -7,10 +7,20 @@ namespace CardDeck
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(" This is a card deck");
             Deal();
             Console.ReadLine();
         }
+
+        static void Display()
+        {
+            Console.WriteLine("Slelect an option");
+            Console.WriteLine("1 : View Deck")
+            Console.WriteLine("2: Shuffle Deck ")
+            Console.WriteLine("3: ")
+        }
+
+
 
         /// <summary>
         /// uses a foreach loop to print all cards in the deck
