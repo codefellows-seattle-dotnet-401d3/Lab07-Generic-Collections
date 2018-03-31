@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CardDeck
 {
-    class Cards
+    class Deck
     {
 
         static void Main(string[] args)

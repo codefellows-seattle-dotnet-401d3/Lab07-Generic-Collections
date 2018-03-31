@@ -7,6 +7,8 @@ namespace CardDeck
 {
     public class Card
     {
+        /* this is the constructor, remember that a constructor used
+        for wiring, the acutal work is done by a method. */
         public Card(V value, s suit)
         {
             Value = value;
