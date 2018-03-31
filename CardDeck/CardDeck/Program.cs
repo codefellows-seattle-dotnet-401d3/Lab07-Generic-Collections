@@ -50,10 +50,8 @@ namespace CardDeck
 
 
 
-        /// <summary>
-        /// uses a foreach loop to print all cards in the deck
-        /// </summary>
-        /// <param name="deck">the deck to be displayed</param>
+      
+        // the method for the for loop to display each card.
         public static void DisplayDeck(Deck<Card> deck)
         {
             foreach (Card card in deck)
@@ -63,6 +61,10 @@ namespace CardDeck
         }
 
         // Deck is a list/Dictonary adding a new list with the attached properties of V and s
+        /* List<string> cats = new List <string> {kitt, kitten}
+         * WriteLine ("$ these are :{cats}")
+         *
+         */
         public static Deck<Card> BuildNewDeck()
         {
             Deck<Card> DeckofCards = new Deck<Card> {

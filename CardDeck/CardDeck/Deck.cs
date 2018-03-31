@@ -9,6 +9,7 @@ namespace CardDeck
 {
     public class Deck<T> : IEnumerable<T>
     {
+        // flag for resizing of the list
         T[] cards = new T[2];
         int count = 0;
 
