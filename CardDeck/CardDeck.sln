@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardDeck", "CardDeck\CardDeck.csproj", "{8037B57F-0944-4A7B-8DB2-F3970D2CDDDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardDeck", "CardDeck\CardDeck.csproj", "{8037B57F-0944-4A7B-8DB2-F3970D2CDDDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D26A07F5-15FD-42F5-855E-1407104D4A46}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.md = Readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{12FDFE4F-B330-4CEE-976D-064460714FFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{8037B57F-0944-4A7B-8DB2-F3970D2CDDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8037B57F-0944-4A7B-8DB2-F3970D2CDDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8037B57F-0944-4A7B-8DB2-F3970D2CDDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FDFE4F-B330-4CEE-976D-064460714FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FDFE4F-B330-4CEE-976D-064460714FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FDFE4F-B330-4CEE-976D-064460714FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FDFE4F-B330-4CEE-976D-064460714FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
