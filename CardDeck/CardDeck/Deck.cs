@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -57,6 +58,12 @@ namespace CardDeck
         {
             return GetEnumerator();
         }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
 
     }
 }
