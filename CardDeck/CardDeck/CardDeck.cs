@@ -1,29 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static CardDeck.Enum;
 
 namespace CardDeck
 {
-    class CardDeck
+    public class Card
     {
+        public Card(V value, s suit)
+        {
+            Value = value;
+            Suit = suit;
+        }
+
+        public V Value { get; set; }
+        public s Suit { get; set; }
     }
-    
-    enum Hearts : int
-    {
-        1 = " Ace of Hearts"
-        Two = 2,
-        Three = 3,
-        Four = 4,
-        Five = 5,
-        Six = 6,
-        Seven = 7,
-        Eight = 8,
-        Nine = 9,
-        Ten = 10,
-        Jack = 11,
-        Queen = 12,
-        King = 13,
-    } 
 
  
 }

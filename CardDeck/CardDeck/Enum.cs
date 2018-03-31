@@ -11,6 +11,7 @@ namespace CardDeck
 
     public class Enum
     {
+        // V will be this list of all the cards
         public enum V : byte
         {
             Ace = 1,
@@ -25,7 +26,16 @@ namespace CardDeck
             Ten,
             Jack,
             Queen,
-            King,
+            King
+        }
+
+        // S will be the type of cards
+        public enum s : byte
+        {
+            Spades,
+            Hearts,
+            Dimond,
+            Clubs
         }
 
 
