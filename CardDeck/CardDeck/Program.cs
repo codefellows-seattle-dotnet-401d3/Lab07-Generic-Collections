@@ -7,7 +7,32 @@ namespace CardDeck
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine(" This is a card deck");
+            bool session = true;
+
+            while (session)
+            {
+                Display();
+                switch (Console.ReadKey().KeyChar)
+                {
+                    case '1':
+                        DisplayDeck(BuildNewDeck());
+                        Console.WriteLine("");
+                        break;
+
+                    case '2':
+                        Deal();
+                        break;
+
+                    case '3':
+                        Deal();
+                        break;
+                }
+
+            }
+           
+            Display();
             Deal();
             Console.ReadLine();
         }
@@ -15,9 +40,12 @@ namespace CardDeck
         static void Display()
         {
             Console.WriteLine("Slelect an option");
-            Console.WriteLine("1 : View Deck")
-            Console.WriteLine("2: Shuffle Deck ")
-            Console.WriteLine("3: ")
+            Console.WriteLine("1 : View Deck");
+            Console.WriteLine("2: Shuffle Deck ");
+            Console.WriteLine("3: Remove One Card");
+
+
+
         }
 
 
