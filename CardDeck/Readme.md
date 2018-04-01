@@ -6,7 +6,7 @@ enums v/ type of card and enums s/ type of orientation. Using Object constructor
 Tiger Hsu
 
 ## Version:
-1.0.0 
+3.0.0 
 
 ## Overview
 In C# the generics list of cards should be able to show cards, and shuffle cards. The deck is built out using the system.generics libary. Then we call a method() remove or Random() onto the cards which gives us either a random card or removes 2 cards.
