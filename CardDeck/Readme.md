@@ -21,7 +21,7 @@ In C# the generics list of cards should be able to show cards, and shuffle cards
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/CardDeck/DeckofCards.JPG)
 
 <!-- Show them what looks like and how how to use the application.  -->
 
