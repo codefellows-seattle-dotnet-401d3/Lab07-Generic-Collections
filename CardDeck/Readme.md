@@ -1,6 +1,6 @@
 ## Generics A Card Deck
-Create a custom generic collection named Card Deck using the console application in C#. This should 
-be a 52 card deck which selects a card, takes out a card in the deck and shuffles the deck.
+Part of Our class today we learned about enums and declaring lists within classes. This is a project that builds upon setting up 
+enums v/ type of card and enums s/ type of orientation. Using Object constructor we create a deck of cards that is viewed in the console.
 
 ## Author:
 Tiger Hsu
@@ -9,8 +9,7 @@ Tiger Hsu
 1.0.0 
 
 ## Overview
-Just like a playing set of cards, this is a collection that has 52 items using a string list.
-We are able to shuffle, pull , and randomize a card list. 
+In C# the generics list of cards should be able to show cards, and shuffle cards. The deck is built out using the system.generics libary. Then we call a method() remove or Random() onto the cards which gives us either a random card or removes 2 cards.
 
 
 ## Getting Started
