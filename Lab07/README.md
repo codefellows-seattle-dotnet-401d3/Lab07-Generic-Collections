@@ -10,7 +10,7 @@ You will need to install and run VS2017 in order to run and use the app.
 
 ## Features
 
-The app will be able to create a collection that can add an item remove it and chuffle the contents. 
+The app will be able to create a collection that can add an item remove it and shuffle the contents. 
 
 ## Resources and Links
 
