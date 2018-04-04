@@ -2,17 +2,12 @@
 
 namespace Lab07
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Deck<Card> cards = new Deck<Card>();
-            BuildPLayingCardDeck(cards);
-            PrintDeck(cards);
-            Console.ReadLine();
-            cards.Shuffle();
-            PrintDeck(cards);
-            Console.ReadLine();
+            Deal(cards);
         }
 
         public static void BUildSuite(Deck<Card> deck, Card.Suits suit)
@@ -41,6 +36,16 @@ namespace Lab07
             {
                 Console.WriteLine($"{item.Value} of {item.Suit}");
             }
+        }
+
+        public static void Deal(Deck<Card> deck)
+        {
+            BUildSuite(deck, Card.Suits.hearts);
+            PrintDeck(deck);
+            Console.ReadLine();
+            deck.Shuffle();
+            PrintDeck(deck);
+            Console.ReadLine();
         }
     }
 }
